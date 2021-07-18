@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 一元加法运算符
+        var s1 = "02"
+        var s2 = "03"
+        var s3 = "z"
+        var b = false
+        var f = 1.1
+        var obj = {
+            valueOf: function() {
+                return -1
+            }
+        }
+        s1 = +s1
+        s2 = +s2
+        s3 = +s3
+        b = +b
+        f = +f
+        obj = +obj
+        console.log(s1) // 2
+        console.log(s2) // 3
+        console.log(s3) // NaN
+        console.log(b) // 0
+        console.log(f) // 1.1
+        console.log(obj) // -1
+
+        // 位运算符
+        /**
+         * 整数转换为二进制的方法
+         * (1) 求这个数值绝对值的二进制码（例如，要求18 的二进制补码，先求 18 的二进制码）；
+           (2) 求二进制反码，即将 0 替换为 1，将 1 替换为 0；
+           (3) 得到的二进制反码加 1。
+         * 
+         **/
+
+        // 按位与(AND) 符号 &
+        var result2 = 25 & 3
+        console.log(result2)
+  
+        // 按位或(OR) 使用竖线|表示
+        var result = 25 | 3
+        console.log(result)
+
+        // 按位非 表示方法（~）
+        var num = 25
+        var num4 = ~num
+        console.log(num4)
+        // 异或(XOR) (使用 ^ 表示)
+    </script>
+</body>
+</html>
